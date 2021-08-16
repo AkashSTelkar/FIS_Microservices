@@ -1,18 +1,18 @@
-package com.fis.account.controller;
+package com.fis.employeeservices.controller;
 
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.fis.account.bean.Account;
+import com.fis.employeeservices.bean.Employee;
 
 @RestController
-@RequestMapping("/accounts")
-public class AccountController {
+@RequestMapping("/id")
+public class EmployeeController {
 
 	@GetMapping("/{number}")
-	public Account getAccount(@PathVariable long number) {
-		return new Account(99990098, "savings", 22232);
+	public Employee getid(@PathVariable long number) {
+		return new Employee(98, "Akash", 2000.0, true);
 	}
 }
