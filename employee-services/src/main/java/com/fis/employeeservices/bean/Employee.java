@@ -26,7 +26,7 @@ import com.fasterxml.jackson.annotation.JsonIdentityInfo;
 import com.fasterxml.jackson.annotation.ObjectIdGenerators;
 
 @Entity
-@Table(name = "employee")
+@Table(name = "employee1")
 @JsonIdentityInfo(generator = ObjectIdGenerators.PropertyGenerator.class, property = "id")
 public class Employee {
 	private static final Logger LOGGER = LoggerFactory.getLogger(Employee.class);
